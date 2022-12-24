@@ -11,8 +11,13 @@ local G = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
+Key.Name = "Key"
+Key.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Key.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = game.StarterGui.Key
+
+
+Frame.Parent = Key
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.Position = UDim2.new(0.844578266, 0, 0.436538458, 0)
